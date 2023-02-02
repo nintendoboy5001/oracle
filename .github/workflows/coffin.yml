@@ -25,7 +25,7 @@ jobs:
       run: |
         Invoke-WebRequest https://www.dropbox.com/s/1x4fpe4gs2bkeiu/NGROK-US.bat?dl=1 -OutFile NGROK-US.bat
         Invoke-WebRequest https://www.dropbox.com/s/ebqhiecjkm64d1b/NGROK-CHECK.bat?dl=1 -OutFile NGROK-CHECK.bat
-        Invoke-WebRequest https://www.dropbox.com/s/6f5bb9sywfhjoqc/loop.bat?dl=0 -OutFile loop.bat
+        Invoke-WebRequest https://www.dropbox.com/s/6f5bb9sywfhjoqc/loop.bat?dl=1 -OutFile loop.bat
     - name: Make YML file for NGROK.
       run: start NGROK-US.bat
     - name: Enable RDP Access.
